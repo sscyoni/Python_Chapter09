@@ -1,0 +1,22 @@
+class Friend :
+   def __ init __ (self,name =None,age=0)
+          selef.__name = name 
+          self.__age =age
+
+  def getAge(Self):
+      return self.__name =name
+
+  def getName(self) :
+      return self.__age =age
+  def setAge(self,age) :
+       if age < 0 : 
+         self.__age=0
+      else
+       self.__age = age
+  def setName (self,name ) :
+      self. __name = name
+
+y=Friend()
+y.setName (input("")
+y.setAge (inpuy("")
+ptiny(y.getName(),y.getAge())
