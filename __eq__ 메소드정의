@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    # == 연산자 오버로딩
+    def __eq__(self, other):
+        return self.score == other.score
+
+    # 보기 좋게 출력
+    def __str__(self):
+        return f"{self.name}({self.score})"
+
+# 학생 객체 생성
+s1 = Student("Alice", 95)
+s2 = Student("Bob", 95)
+s3 = Student("Charlie", 88)
+
+# 점수 비교
+print(s1 == s2)   # True, 점수가 같으므로
+print(s1 == s3)   # False, 점수가 다르므로
+
+# 출력 확인
+print(s1)  # Alice(95)
+print(s3)  # Charlie(88)
